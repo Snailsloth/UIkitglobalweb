@@ -1,0 +1,37 @@
+nav(class="uk-navbar-container uk-flex uk-flex-between uk-padding-small" uk-navbar style="z-index: 980;" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: #bottom")
+	div(class="uk-navbar-left navbar-mobile")
+		button(class="uk-button uk-button-default uk-hidden@m" type="button")
+			<i class="fa fa-bars" aria-hidden="true"></i>
+		div(uk-drop="mode: click;animation: uk-animation-slide-left" class="uk-hidden@m")
+			ul(class="uk-nav uk-dropdown-nav uk-card uk-card-default uk-padding-small")
+				li.uk-nav-header.uk-padding-small Global Web Group
+				li.uk-nav-divider
+				li.uk-padding-small 
+					a(href="webstore.html") Интернет-магазин
+				li.uk-padding-small 
+					a(href="corporate.html") Корпоративный сайт
+				li.uk-padding-small 
+					a(href="landing.html") Посадочная страница
+				li.uk-padding-small 
+					a(href="contacts.html") Контакты
+				li.uk-nav-divider
+				li.uk-padding-small
+					a(href="tel:8 (812) 384-48-30") #[i(class="fa fa-phone" aria-hidden="true" style="padding-right:15px;")] 8 (812) 384-48-30
+				li.uk-padding-small
+					a(href="mailto:info@gw.spb.ru") #[i(class="fa fa-envelope" aria-hidden="true" style="padding-right:15px;")] info@gw.spb.ru
+		a(href="index.html",alt="GlobalWebGroup",class="uk-navbar-logo-link uk-flex-middle uk-navbar-brand")
+			img(src="img/logo.png",class="uk-navbar-logo-image")
+			span(class="uk-text-middle uk-margin-small-left uk-padding-small uk-text-muted uk-visible@m") Global Web Group
+		ul(class="uk-navbar-nav uk-visible@m")
+			li 
+				a(href="webstore.html") Интернет-магазин
+			li 
+				a(href="corporate.html") Корпоративный сайт
+			li 
+				a(href="landing.html") Посадочная страница
+			li 
+				a(href="contacts.html") Контакты
+	div(class="uk-navbar-right uk-flex-right@m uk-visible@m uk-flex-center@l")
+			a.navbar-phone(href="tel:8 (812) 384-48-30" title="Нажмите для звонка по номеру" uk-tooltip="pos: bottom") 8 (812) 384-48-30
+			div.button-container
+				a.button-styled.button-styled__black(href="#modal-callback-window" uk-toggle) Заказать звонок

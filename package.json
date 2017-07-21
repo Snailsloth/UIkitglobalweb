@@ -1,0 +1,19 @@
+{
+	"name": "27mProject",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "pingy dev",
+		"export": "pingy export"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@pingy/cli": "^0.7.0",
+		"node-sass": "^4.5.3",
+		"pug": "^2.0.0-rc.2"
+	}
+}

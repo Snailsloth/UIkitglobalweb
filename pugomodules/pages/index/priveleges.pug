@@ -1,0 +1,47 @@
+div(class="uk-container uk-margin-large-bottom")
+	article.uk-article
+		h1.uk-article-title.uk-text-center.uk-margin-large-bottom Привилегии
+		div(class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid)
+			div(uk-scrollspy="cls: uk-animation-slide-left; repeat: true")
+				div.uk-card.uk-card-default.uk-card-body.uk-text-center.uk-background-secondary.uk-light
+					h3.uk-card-title.uk-text-meta.uk-text-bold.uk-text-large 1
+					<hr class="uk-divider-icon">
+					h3.uk-card-title.uk-text-lead Размещение
+					p Premium-хостинг в собственном дата-центре на 6 месяцев бесплатно.
+			div(uk-scrollspy="cls: uk-animation-scale-up; repeat: true")
+				div.uk-card.uk-card-default.uk-card-body.uk-text-center
+					h3.uk-card-title.uk-text-meta.uk-text-bold.uk-text-large 2
+					<hr class="uk-divider-icon">
+					h3.uk-card-title.uk-text-lead Личный менеджер
+					p Возможность 24/7 общаться с личным менеджером.
+			div(uk-scrollspy="cls: uk-animation-slide-right; repeat: true")
+				div.uk-card.uk-card-default.uk-card-body.uk-text-center.uk-background-secondary.uk-light
+					h3.uk-card-title.uk-text-meta.uk-text-bold.uk-text-large 3
+					<hr class="uk-divider-icon">
+					h3.uk-card-title.uk-text-lead SSL сертификат
+					p Бесплатный SSL сертификат для повышенного уровня безопасности сайта.
+		div(class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid)
+			div(uk-scrollspy="cls: uk-animation-slide-left; repeat: true")
+				div.uk-card.uk-card-default.uk-card-body.uk-text-center
+					h3.uk-card-title.uk-text-meta.uk-text-bold.uk-text-large 4
+					<hr class="uk-divider-icon">
+					h3.uk-card-title.uk-text-lead Адаптивная верстка
+					p Ваш сайт будет адаптирован под все мобильные и немобильные устройства.
+			div(uk-scrollspy="cls: uk-animation-scale-up; repeat: true")
+				div.uk-card.uk-card-default.uk-card-body.uk-text-center.uk-background-secondary.uk-light
+					h3.uk-card-title.uk-text-meta.uk-text-bold.uk-text-large 5
+					<hr class="uk-divider-icon">
+					h3.uk-card-title.uk-text-lead Телефонный номер
+					p Предоставляем запоминающийся номер.
+			div(uk-scrollspy="cls: uk-animation-slide-right; repeat: true")
+				div.uk-card.uk-card-default.uk-card-body.uk-text-center
+					h3.uk-card-title.uk-text-large Появились вопросы?
+					p Заполните форму и мы с Вами свяжемся.
+					form
+						div.uk-margin
+							input(class="uk-input" type="text" placeholder="Имя")
+						div.uk-margin
+							input(class="uk-input" type="number" pattern="[-+]?[0-9]" placeholder="Телефон")
+						button(class="uk-button uk-button-secondary uk-button-small") Отправить
+						p(style="visibility:hidden") Ваше сообщение отправлено
+

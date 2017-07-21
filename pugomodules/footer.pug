@@ -1,0 +1,48 @@
+footer(class="uk-visible@l")
+	div.uk-background-secondary.uk-light.uk-flex.uk-flex-between
+		div.uk-navbar-left
+			div.uk-navbar-item
+				form
+					div.uk-inline
+						button.uk-button.uk-button-default.uk-light(type="button") Скачать документы
+						div.uk-background-secondary(uk-drop="mode: click")
+							div.uk-card.uk-card-body.uk-card-default.uk-background-secondary
+								ul.uk-list.uk-list-bullet.uk-background-secondary
+									li
+										a(href="#") Карточка компании и реквизиты
+									li
+										a(href="#") Продвижение и шаблон договора
+									li
+										a(href="#") Веб-разработка (шаблон договора)
+		div.uk-navbar-center
+			div.uk-navbar-item
+				div(class="footer-contacts-parent" itemscope itemtype="http://schema.org/Organization")
+					p(class="footerorgname" itemprop="name") Global Web Group
+					ul.uk-subnav.uk-subnav-pill.footer-flyin-pill.uk-background-secondary.uk-light(uk-switcher="animation: uk-animation-fade")
+						li.uk-flex-center
+							a(href="#") <i class="fa fa-phone-square" aria-hidden="true"></i>
+						li.uk-flex-center
+							a(href="#") <i class="fa fa-map-marker" aria-hidden="true"></i>
+						li.uk-flex-center
+							a(href="#") <i class="fa fa-envelope" aria-hidden="true"></i>
+					
+					ul(class="uk-switcher uk-margin" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress")
+						li.uk-active
+							p(class="uk-light" itemprop="telephone") +7 812 409-00-90
+						li
+							p(class="uk-light" itemprop="streetAddress") #[span(itemprop="addressLocality") Санкт-Петербург] , #[span(itemprop="postalCode") 195197] , #[span(itemprop="streetAddress") Маршала Блюхера пр-кт, д.12, корп. 7, лит. Б]
+						li
+							a.uk-light(href="mailto:info@gw.spb.ru" itemprop="email" style="color:rgba(255, 255, 255, 0.7);") info@gw.spb.ru
+
+
+				
+		div.uk-navbar-right
+			div.uk-navbar-item
+				div.uk-inline
+					a.uk-padding-small(href="https://vk.com/globalwebgroup" title="Мы вКонтакте" uk-tooltip="pos: top")
+						<i class="fa fa-vk fa-2x" aria-hidden="true"></i>
+					a.uk-padding-small(href="https://www.behance.net/globalwebgroup" title="Мы на Behance" uk-tooltip="pos: top")
+						<i class="fa fa-behance fa-2x" aria-hidden="true"></i>
+					a.uk-padding-small(href="https://www.instagram.com/global_web_group/" title="Мы в Instagram" uk-tooltip="pos: top")
+						<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+

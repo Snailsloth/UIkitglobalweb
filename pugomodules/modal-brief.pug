@@ -1,0 +1,45 @@
+div(id="modal-brief-window" uk-modal="center: true")
+	div.uk-modal-dialog
+		button(class="uk-modal-close-default" type="button" uk-close)
+		div.uk-modal-header
+			h2.uk-modal-title Заполните бриф
+			p Наши специалисты проанализируют Вашу заявку и дадут ответ.
+		div.uk-modal-body
+			form
+				fieldset.uk-fieldset
+					legend.uk-legend Бриф на разработку сайта:
+					div.uk-margin
+						label.uk-form-label Как к Вам обращаться?
+						input(class="uk-input" type="text" placeholder="Имя")
+					div.uk-margin
+						label.uk-form-label Телефон для связи
+						input(class="uk-input" type="number" pattern="[-+]?[0-9]" placeholder="Телефон")
+					div.uk-margin
+						label.uk-form-label Название Ващшей компании
+						input(class="uk-input" type="text" placeholder="Название компании")
+					div.uk-margin
+						label.uk-form-label Адрес корпоративного сайта
+						input(class="uk-input" type="text" placeholder="Если у Вас уже есть веб-сайт, укажите его адрес в этом поле")
+					div.uk-margin
+						label.uk-form-label Род деятельности
+						input(class="uk-input" type="text" placeholder="Чем занимается Ваша компания?")
+					div.uk-margin
+						label.uk-form-label Ближайшие конкуренты и их сайты
+						textarea(class="uk-textarea" rows="5" placeholder="Укажите название компаний, род деятельности, адрес веб-страниц.")
+					div.uk-margin
+						label.uk-form-label В конечном итоге сайт будет представлять:
+						select.uk-select
+							option Корпоративный сайт
+							option Интернет-магазин
+							option Лендинг пейдж
+							option Альтернативное решание
+					div.uk-margin
+						label.uk-form-label Цветовая гамма и пожелания, связанные с ней:
+						textarea(class="uk-textarea" rows="5" placeholder="Перечислите цвета или укажите сайты, подходящие в качестве образца цветовой гаммы")
+					div.uk-margin
+						label.uk-form-label Примеры понравившихся дизайнов сайтов:
+						textarea(class="uk-textarea" rows="5" placeholder="Укажите ссылку и укажите, что именно вам кажется привлекательным")
+					div.uk-margin
+						label.uk-form-label Укажите дополнительные требования к сайту, неотраженные в вопросах:
+						textarea(class="uk-textarea" rows="5" placeholder="")
+					button(class="uk-button uk-button-secondary") Отправить

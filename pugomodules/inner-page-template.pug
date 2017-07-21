@@ -1,0 +1,14 @@
+block data
+	- var pageTitle = "Template"
+doctype html
+html
+	include head.pug
+	body
+		include header.pug
+		main.main-content
+
+			include pages/index/devstages-slider.pug
+			include pages/index/priveleges.pug
+		include footer.pug
+		include modal-callback.pug
+		include modal-brief.pug

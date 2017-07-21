@@ -1,0 +1,30 @@
+block data
+	- var pageTitle = "Интернет магазин"
+	- var pageTopBanner = ('img/sites/webstoreS.jpg')
+	- var pageTopBannerAlt = pageTitle
+doctype html
+html
+	include pugomodules/head.pug
+	body
+		include pugomodules/header.pug
+		main.main-content
+			div.uk-offcanvas-content
+				div(class="uk-container uk-container-large uk-margin-large-bottom")
+					article.uk-article
+						div(class="uk-child-width-1-2@m" uk-grid itemscope itemtype="http://schema.org/Product")
+							div
+								picture
+									source(media="(min-width: 1400px)" srcset="img/sites/webstoreL.png")
+									source(media="(min-width: 650px)" srcset="img/sites/webstoreM.png")
+									img.uk-animation-kenburns(itemprop="image" src=pageTopBanner alt=pageTopBannerAlt)
+							div
+								h1(class="uk-article-title " itemprop="name")=pageTitle
+								p(class="uk-article-meta uk-text-lead" itemprop="description") Сайт для Вашего бизнеса.
+								p Вне всяких сомнений что сегодня большинство потребителей используют интернет для поиска товаров или услуг, в которых они нуждаются. Если у Вас есть сайт - компания получит не только больше доверия, но и больше клиентов. Вы можете заказать разработку полноценного ресурса с выбором, изменением, комплектацией, оплатой и доставкой товара (а так же не забывайте про доступность 24 часа, 7 дней в неделю, без необходимости его закрывать) или легковесный каталог-брошуру услуг и товаров.
+								p Намного проще и быстрее обновлять информацию о ваших продуктах и ​​услугах на веб-сайте, чем в печатной,видео или иной рекламной продукции Это делает сайт эффективным инструментом для информирования Ваших клиентов о прибытии новых продуктов, предстоящих мероприятиях, специальных рекламных акциях или любых предлагаемых новых услугах.
+				include pugomodules/black-brief-button-block.pug
+				include pugomodules/cms-block.pug
+				include pugomodules/pages/index/priveleges.pug
+	include pugomodules/footer.pug
+	include pugomodules/modal-callback.pug
+	include pugomodules/modal-brief.pug

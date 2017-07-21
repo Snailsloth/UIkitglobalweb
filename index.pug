@@ -1,0 +1,19 @@
+block data
+	- var pageTitle = "GlobalWeb"
+doctype html
+html
+	include pugomodules/head.pug
+	body
+		include pugomodules/header.pug
+		main.main-content
+			div.uk-offcanvas-content
+				include pugomodules/pages/index/bigbanner.pug
+				include pugomodules/pages/index/portfolio.pug
+				include pugomodules/pages/index/howweworkGRID.pug
+				include pugomodules/pages/index/priveleges.pug
+				include pugomodules/pages/index/devstages-slider.pug
+				include pugomodules/pages/index/whyAdaptive.pug
+				include pugomodules/goTop.pug
+		include pugomodules/footer.pug
+		include pugomodules/modal-callback.pug
+		include pugomodules/modal-brief.pug

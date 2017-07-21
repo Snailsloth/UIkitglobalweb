@@ -1,0 +1,43 @@
+button(class="mobile-menu-button uk-hidden@m" type="button" uk-toggle="target: #offcanvas-nav")
+	span(style="background-image:url(img/menu.png);background-position:center;background-size:40px 40px;background-repeat:no-repeat;display: block;width: 100%;height: 100%;opacity: 0.8;")
+div(class="uk-hidden@m" id="offcanvas-nav" uk-offcanvas="overlay: true")
+	div(class="uk-offcanvas-bar")
+		button(class="uk-offcanvas-close" type="button" uk-close)
+		
+		ul(class="uk-nav uk-nav-default")
+				li.uk-padding-small
+					a(href="index.html",alt="GlobalWebGroup",class="uk-flex uk-flex-column uk-flex-center uk-flex-wrap")
+								img(src="img/logo.png",class="uk-mobile-logo-image")
+								span(class="uk-text-middle") Global Web Group
+				li.uk-padding-small 
+					a(href="webstore.html") Интернет-магазин
+				li.uk-padding-small 
+					a(href="corporate.html") Корпоративный сайт
+				li.uk-padding-small 
+					a(href="landing.html") Посадочная страница
+				li.uk-padding-small 
+					a(href="contacts.html") Контакты
+				li.uk-nav-divider
+				li.uk-padding-small
+					a(href="tel:8 (812) 384-48-30") #[i(class="fa fa-phone" aria-hidden="true" style="padding-right:15px;")] 8 (812) 384-48-30
+				li.uk-padding-small
+					a(href="mailto:info@gw.spb.ru") #[i(class="fa fa-envelope" aria-hidden="true" style="padding-right:15px;")] info@gw.spb.ru
+
+nav(class=" desktop-nav uk-flex uk-flex-between uk-padding-small uk-padding-remove-vertical uk-visible@m" uk-navbar style="z-index: 980;" uk-sticky="bottom: #offset")
+	div(class="uk-navbar-left")
+		a(href="index.html",alt="GlobalWebGroup",class="uk-navbar-logo-link uk-flex-middle uk-navbar-brand")
+			img(src="img/logo.png",class="uk-navbar-logo-image")
+			span(class="uk-text-middle uk-margin-small-left uk-padding-small uk-text-muted uk-visible@m") Global Web Group
+		ul(class="uk-navbar-nav uk-visible@m")
+			li 
+				a(href="webstore.html") Интернет-магазин
+			li 
+				a(href="corporate.html") Корпоративный сайт
+			li 
+				a(href="landing.html") Посадочная страница
+			li 
+				a(href="contacts.html") Контакты
+	div(class="uk-navbar-right uk-flex-right@m uk-visible@m uk-flex-center@l")
+			a.navbar-phone(href="tel:8 (812) 384-48-30" title="Нажмите для звонка по номеру" uk-tooltip="pos: bottom") 8 (812) 384-48-30
+			div.button-container
+				a.button-styled.button-styled__black(href="#modal-callback-window" uk-toggle) Заказать звонок

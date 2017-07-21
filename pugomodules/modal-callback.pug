@@ -1,0 +1,14 @@
+div(id="modal-callback-window" uk-modal="center: true")
+	div.uk-modal-dialog
+		button(class="uk-modal-close-default" type="button" uk-close)
+		div.uk-modal-header
+			h2.uk-modal-title Обратный звонок
+		div.uk-modal-body
+			p Заполните форму и мы Вам перезвоним.
+			form
+				div.uk-margin
+					input(class="uk-input" autofocus type="text" placeholder="Имя")
+				div.uk-margin
+					input(class="uk-input" type="number" required pattern="[-+]?[0-9]" placeholder="Телефон")
+				button(class="uk-button uk-button-secondary") Отправить
+				

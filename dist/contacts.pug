@@ -1,0 +1,36 @@
+block data
+	- var pageTitle = "Контакты"
+	- var googleMap = true
+doctype html
+html
+	include pugomodules/head.pug
+	body
+		include pugomodules/header.pug
+		main.main-content
+			div.uk-offcanvas-content
+				div(class="uk-container uk-container-large uk-margin-large-bottom uk-margin-small-top")
+					article.uk-article
+						div(class="uk-grid-collapse uk-child-width-1-2@s uk-margin uk-grid uk-overlay-default uk-text-center@m" uk-grid itemscope itemtype="http://schema.org//Organization")
+							div(itemscope itemtype="http://schema.org/Organization" class="uk-card uk-card-default uk-card-body uk-padding-small")
+								h1(class="uk-article-title uk-text-center")=pageTitle
+								p(class="uk-text-large uk-text-center uk-text-left@m") Наш адрес: #[br]
+								div(itemprop="address" itemscope itemtype="http://schema.org/PostalAddress")
+									ul(class="uk-list uk-text-center uk-text-left@m")
+										li 
+											p #[span(itemprop="postalCode") 195197] #[span(itemprop="addressLocality") Санкт-Петербург,] #[br] #[span(itemprop="streetAddress") Маршала Блюхера пр-кт, д.12, корп. 7, лит. Б]
+										li
+											span(itemprop="name") Global Web Group, 6 этаж, офис 613
+										li
+											a(href="tel:+7 812 384-48-33")
+												span(itemprop="telephone") +7 812 384-48-33
+										li
+											a(href="mailto:info@gw.spb.ru")
+												span(itemprop="email") info@gw.spb.ru
+										li
+											time(itemprop="openingHours" datetime="Mo-Fr, 09:30−19:00" class="uk-text-meta")
+												i Работаем с 9:30 до 19:00 (Понедельник-Пятница)
+							div(class="uk-card uk-card-default uk-card-body uk-padding-small")
+								div(id="map")
+				include pugomodules/ouroffice.pug
+		include pugomodules/footer.pug
+		include pugomodules/modal-callback.pug

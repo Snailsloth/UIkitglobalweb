@@ -1,0 +1,37 @@
+block data
+	- var pageTitle = "Посадочная страница / лэндинг"
+	- var pageTopBanner = ('img/sites/landingS.jpg')
+	- var pageTopBannerAlt = pageTitle
+	- var pageTopText
+doctype html
+html
+	include pugomodules/head.pug
+	body
+		include pugomodules/header.pug
+		main.main-content
+			div.uk-offcanvas-content
+				div(class="uk-container uk-container-large uk-margin-large-bottom")
+					article.uk-article
+						div(class="uk-child-width-1-2@m" uk-grid itemscope itemtype="http://schema.org/Product")
+							div
+								picture
+									source(media="(min-width: 1400px)" srcset="img/sites/landingL.png")
+									source(media="(min-width: 650px)" srcset="img/sites/landingM.png")
+									img.uk-animation-kenburns(itemprop="image" src=pageTopBanner alt=pageTopBannerAlt)
+							div
+								h1(class="uk-article-title" itemprop="name")=pageTitle
+								p(class="uk-article-meta uk-text-lead" itemprop="description") Заинтересуйте Ваших клиентов.
+								p Хорошая посадочная страница будет нацелена на определенную аудиторию, такую ​​как входящий трафик от кампании электронной почты, рекламирующей определенную электронную книгу, или посетителей, которые нажимают рекламу с оплатой за клик, рекламируя ваш веб-семинар. Вы можете создавать целевые страницы, которые позволяют посетителям загружать ваши контентные предложения (электронные книги, официальные документы, веб-семинары и т.д) Или выкупать другие маркетинговые предложения, такие как бесплатные пробные версии, демонстрации или купоны для вашего продукта.
+								p По сравнению со стоимостью рекламного объявления в журнале, когда вы рассматриваете потенциальный сегмент, с которым вы можете связаться с помощью веб-сайта, это очень рентабельный способ продвижения вашего бизнеса.
+								p Вот несколько примеров того, чем Вам может помочь лэндинг:						
+								ul.uk-listuk-list-bullet
+									li  входящий трафик от кампаний рассылки электронной почты, рекламирующей Ваши услуги
+									li  бесплатные пробные версии, демонстрации или купоны для Вашего продукта
+									li  ответвления от Вашего основного сайта с ограниченным предложением или рекламой новинки
+									li  Начальный тест сегмента рынка с MVP
+				include pugomodules/black-brief-button-block.pug
+				include pugomodules/cms-block.pug
+				include pugomodules/pages/index/priveleges.pug
+	include pugomodules/footer.pug
+	include pugomodules/modal-callback.pug
+	include pugomodules/modal-brief.pug

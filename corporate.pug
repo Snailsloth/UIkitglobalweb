@@ -1,0 +1,30 @@
+block data
+	- var pageTitle = "Корпоративный сайт"
+	- var pageTopBanner = ('img/sites/corporateS.jpg')
+	- var pageTopBannerAlt = pageTitle
+doctype html
+html
+	include pugomodules/head.pug
+	body
+		include pugomodules/header.pug
+		main(class="main-content uk-margin-small-top")
+			div.uk-offcanvas-content
+				div(class="uk-container uk-container-large uk-margin-large-bottom")
+					article.uk-article
+						div(class="uk-child-width-1-2@m" uk-grid itemscope itemtype="http://schema.org/Product")
+							div
+								picture
+									source(media="(min-width: 1400px)" srcset="img/sites/corporateL.png")
+									source(media="(min-width: 650px)" srcset="img/sites/corporateM.png")
+									img.uk-animation-kenburns(itemprop="image" src=pageTopBanner alt=pageTopBannerAlt)
+							div
+								h1(class="uk-article-title" itemprop="name")=pageTitle
+								p(class="uk-article-meta uk-text-lead" itemprop="description") Место для Вашей компании в сети
+								p #[a(href="http://fom.ru/SMI-i-internet/13585" alt="Интернет в России") По данным фонда «Общественное мнение»], только в России на конец весны этого года суточная аудитория интернета - более семидесяти миллионов человек. Не стоит отказываться от возможности представить Вашу компанию в глобальной сети. Корпоративный сайт может сыграть ключевое значение в формировании имиджа компании и мнения клиентов о ней.
+								
+				include pugomodules/black-brief-button-block.pug
+				include pugomodules/cms-block.pug
+				include pugomodules/pages/index/priveleges.pug
+	include pugomodules/footer.pug
+	include pugomodules/modal-callback.pug
+	include pugomodules/modal-brief.pug

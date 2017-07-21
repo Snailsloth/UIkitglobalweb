@@ -1,0 +1,24 @@
+button(class="uk-button uk-button-default mobile-menu-button uk-hidden@m" type="button" uk-toggle="target: #offcanvas-nav")
+	<i class="fa fa-bars" aria-hidden="true"></i>
+div(class="uk-hidden@m" id="offcanvas-nav" uk-offcanvas="mode: reveal; overlay: true")
+	div(class="uk-offcanvas-bar")
+		button(class="uk-offcanvas-close" type="button" uk-close)
+		
+		ul(class="uk-nav uk-nav-default")
+				li.uk-padding-small
+					a(href="index.html",alt="GlobalWebGroup",class="uk-flex uk-flex-column uk-flex-center uk-flex-wrap")
+								img(src="img/logo.png",class="uk-mobile-logo-image")
+								span(class="uk-text-middle") Global Web Group
+				li.uk-padding-small 
+					a(href="webstore.html") Интернет-магазин
+				li.uk-padding-small 
+					a(href="corporate.html") Корпоративный сайт
+				li.uk-padding-small 
+					a(href="landing.html") Посадочная страница
+				li.uk-padding-small 
+					a(href="contacts.html") Контакты
+				li.uk-nav-divider
+				li.uk-padding-small
+					a(href="tel:8 (812) 384-48-30") #[i(class="fa fa-phone" aria-hidden="true" style="padding-right:15px;")] 8 (812) 384-48-30
+				li.uk-padding-small
+					a(href="mailto:info@gw.spb.ru") #[i(class="fa fa-envelope" aria-hidden="true" style="padding-right:15px;")] info@gw.spb.ru

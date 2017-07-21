@@ -1,0 +1,40 @@
+{
+	"name": "27mProject",
+	"exportDir": "dist",
+	"autoprefix": true,
+	"minify": false,
+	"compile": true,
+	"exclusions": [
+		{
+			"path": "node_modules",
+			"action": "exclude",
+			"type": "dir"
+		},
+		{
+			"path": "unusedImages",
+			"action": "exclude",
+			"type": "dir"
+		},
+		{
+			"path": "pugomodules",
+			"action": "exclude",
+			"type": "dir"
+		},
+		{
+		  "path": "dist",
+		  "action": "dontCompile",
+		  "type": "dir"
+		},
+		{
+		  "path": "*.html",
+		  "action": "dontCompile",
+		  "type": "file"
+		},
+				{
+		  "path": "dist/*.html",
+		  "action": "dontCompile",
+		  "type": "file"
+		}
+	],
+	"port": 51874
+}
